@@ -2,7 +2,7 @@ import requests
 
 
 class MlnnClient(object):
-    base_url = 'http://185.195.24.98:5000'
+    base_url = 'http://mlnn.net/api'
 
     def request(self, text, **kwargs):
         params = {"text": text}
