@@ -10,7 +10,7 @@ class MlnnClientUnitTest(unittest.TestCase):
 
     def test_langdet_api(self):
         text = 'Millennium'
-        response = self.client.request(text)
+        response = self.client.langdet(text)
         self.assertIn('lang', response)
         self.assertIn('source_text', response)
         self.assertEqual(response['source_text'], text)
